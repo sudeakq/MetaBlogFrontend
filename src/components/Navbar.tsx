@@ -5,20 +5,17 @@ const Navbar = () => {
 
   return (
     <nav className="flex justify-between items-center p-4 shadow-md bg-white">
-      {/* Logo Bölümü */}
       <div className="flex items-center space-x-2">
         <img src="/Logo.png" alt="Logo" className="h-10 w-auto" />
       </div>
 
-      {/* Hamburger Menü (Mobil) */}
+      {/* Hamburger Menü*/}
       <button
         onClick={() => setMenuOpen(!menuOpen)}
         className="lg:hidden block text-gray-600 focus:outline-none"
       >
         {menuOpen ? "✖" : "☰"}
       </button>
-
-      {/* Menü Linkleri */}
       <ul
         className={`lg:flex lg:space-x-8 text-gray-600 absolute lg:static bg-white w-full lg:w-auto lg:translate-x-0 transition-transform transform ${
           menuOpen ? "translate-x-0" : "-translate-x-full"
