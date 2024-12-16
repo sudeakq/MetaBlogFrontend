@@ -4,8 +4,8 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white z-50 shadow-md">
-      <div className="flex justify-between items-center py-4 px-6 container mx-auto">
+    <nav className="fixed top-0 left-0 w-full bg-white z-50 ">
+      <div className="flex justify-between items-center py-4 px-[11rem] container mx-auto">
         <div className="flex items-center space-x-2">
           <img src="/Logo.png" alt="Logo" className="h-10 w-auto" />
         </div>

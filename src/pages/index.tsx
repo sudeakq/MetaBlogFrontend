@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <div className="pt-20 lg:pt-28">
+      <div className="pt-20 lg:pt-25">
         <BlogCard
           imageSrc="/FirstPageBanner.png"
           userimageSrc="/RandomUser.png"
