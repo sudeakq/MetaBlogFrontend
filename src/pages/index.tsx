@@ -1,4 +1,5 @@
 import BlogCard from "@/components/BlogCard";
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import PostCard from "@/components/PostCard";
 
@@ -44,6 +45,9 @@ export default function Home() {
     
      </div>
     </div>
+      </div>
+      <div>
+        <Footer/>
       </div>
     </div>
   );
