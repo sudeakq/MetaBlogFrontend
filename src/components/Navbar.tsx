@@ -1,11 +1,18 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router"; // Import useRouter to get the current path
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const router = useRouter(); // Access the router object
+
+  // Function to check if the current route matches the link
+  const isActive = (path: string) => {
+    return router.pathname === path ? "font-bold text-black" : "text-gray-600";
+  };
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white z-50 ">
+    <nav className="fixed top-0 left-0 w-full bg-white z-50">
       <div className="flex justify-between items-center py-4 px-[11rem] container mx-auto">
         <div className="flex items-center space-x-2">
           <img src="/Logo.png" alt="Logo" className="h-10 w-auto" />
@@ -25,9 +32,15 @@ const Navbar = () => {
             menuOpen ? "translate-x-0" : "-translate-x-full"
           } lg:items-center lg:flex-row flex flex-col top-16 left-0 z-40`}
         >
-          <li className="hover:text-black cursor-pointer p-4 lg:p-0">  <Link href="/">Home</Link></li>
-          <li className="hover:text-black cursor-pointer p-4 lg:p-0"> <Link href="/blogListing">Blog</Link></li>
-          <li className="hover:text-black cursor-pointer p-4 lg:p-0"> <Link href="/singlePost">Single Post</Link></li>
+          <li className={`hover:text-black cursor-pointer p-4 lg:p-0 ${isActive("/")}`}>
+            <Link href="/">Home</Link>
+          </li>
+          <li className={`hover:text-black cursor-pointer p-4 lg:p-0 ${isActive("/blogListing")}`}>
+            <Link href="/blogListing">Blog</Link>
+          </li>
+          <li className={`hover:text-black cursor-pointer p-4 lg:p-0 ${isActive("/singlePost")}`}>
+            <Link href="/singlePost">Single Post</Link>
+          </li>
           <li className="hover:text-black cursor-pointer p-4 lg:p-0">Pages</li>
           <li className="hover:text-black cursor-pointer p-4 lg:p-0">Contact</li>
         </ul>
