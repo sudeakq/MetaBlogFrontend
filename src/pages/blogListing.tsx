@@ -4,10 +4,12 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import PostCard from "@/components/PostCard";
 import BlogBanner from "@/components/BlogBanner";
+import Advertisement from './../components/Advertisement';
 const BlogListing = () => {
   return (
     <div className="min-h-screen">
     <Navbar />
+    {/* Header-Banner Section */}
     <div className="pt-20 lg:pt-25">
    <div className="flex items-center justify-center flex-col">
    <h1 className="font-bold text-2xl mb-2">Page Title</h1>
@@ -21,6 +23,7 @@ const BlogListing = () => {
         date="August 20, 2022"
       />
     </div>
+    {/* Latest-Posts Section */}
     <div className="pt-7 lg:pt-7 max-w-6xl mx-auto my-5">
       <h1 className="font-bold text-2xl mb-5">Latest Posts</h1>
       <div className="row">
@@ -46,10 +49,17 @@ const BlogListing = () => {
        authorName="Tracey Wilson"
        date="August 20, 2022"
        authorImage="https://randomuser.me/api/portraits/women/44.jpg"/>
-  
+   
    </div>
   </div>
     </div>
+    {/* Button Section */}
+   <div className="flex items-center justify-center flex-col my-10">
+   <button className="bg-white text-gray-400 border border-gray-300 rounded-lg py-1 px-5 text-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500">
+      Load More
+    </button>
+    </div>
+    <Advertisement/>
     <div>
       <Footer/>
     </div>
