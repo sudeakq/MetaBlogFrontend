@@ -1,7 +1,5 @@
-// components/TextBox.tsx
 import React from 'react';
 
-// Define the types for the props
 interface TextBoxProps {
   title: string;
   paragraphs: string[];

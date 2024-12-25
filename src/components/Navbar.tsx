@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/router"; // Import useRouter to get the current path
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const router = useRouter(); // Access the router object
+  const router = useRouter();
 
-  // Function to check if the current route matches the link
   const isActive = (path: string) => {
     return router.pathname === path ? "font-bold text-black" : "text-gray-600";
   };
