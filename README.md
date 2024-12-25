@@ -7,9 +7,12 @@ Bu proje, modern ve yaratıcı bir blog tasarımını temel alarak yapılmışt�
   - Home: Ana sayfa, genel blog yazılarının listelendiği alandır.
   - Blog: Blog yazılarını listeleyen sayfa.
   - Single Post: Tek bir blog yazısını görüntüleyen sayfa.
-•⁠ - ⁠Navbar: Navbar içerisinde yer alan "Home", "Blog" ve "Single Post" bağlantıları çalışmaktadır ve her bir sayfayı gösterebilirsiniz.
-•⁠ - ⁠Dark-Light Mode Geçişi: Navbar'da bulunan buton sayesinde kullanıcılar, **dark mode ve light mode arasında geçiş yapabilirler.
+
+•⁠  Navbar: Navbar içerisinde yer alan "Home", "Blog" ve "Single Post" bağlantıları çalışmaktadır ve her bir sayfayı gösterebilirsiniz.
+
+•⁠  ⁠Dark-Light Mode Geçişi: Navbar'da bulunan buton sayesinde kullanıcılar, dark mode ve light mode arasında geçiş yapabilirler.
   - Bu seçim, kullanıcının tercihine göre local storage kullanılarak kaydedilir ve sayfa yenilendiğinde aynı modda devam eder.
+
 •⁠  ⁠Responsive Tasarım: Tasarım hala geliştirilme aşamasında olup, mobil uyumluluk üzerinde çalışılmaktadır.
 
 ## Kullanılan Teknolojiler:
@@ -29,15 +32,15 @@ git clone https://github.com/sudeakq/metablogfrontend
 
 ### 2.⁠ ⁠Gerekli Bağımlılıkları Yükleyin
 Proje klasörüne gidin ve gerekli bağımlılıkları yüklemek için npm veya yarn kullanın:
-cd your-project-name
 npm install
 
 ### 3.⁠ ⁠Geliştirme Sunucusunu Başlatın
 Projenin geliştirme modunda çalışmasını sağlamak için aşağıdaki komutu kullanın:
 npm run dev
+
 Geliştirme sunucusu http://localhost:3000 adresinde çalışacaktır. Tarayıcınızda bu adresi ziyaret ederek projeyi görüntüleyebilirsiniz.
 
-Proje Yapısı
+## Proje Yapısı
 Projenin yapısı şu şekildedir:
 
 /pages
@@ -51,22 +54,12 @@ Projenin yapısı şu şekildedir:
 /styles
   /tailwind.css            # Tailwind CSS konfigürasyonu
 
-Özellikler
-Navbar: Menüdeki bağlantılar (Home, Blog, Single Post) düzgün çalışmakta ve React Router DOM kullanılarak sayfalara yönlendirme yapılmaktadır.
-Dark/Light Mode: Navbar'daki buton aracılığıyla tema değiştirebilirsiniz. Kullanıcının tercihi localStorage'da saklanır, bu sayede sayfa yenilendiğinde seçilen tema korunur.
-Responsive Tasarım: Mobil uyumluluk üzerinde çalışmalar sürmektedir. Şu anda temel mobil uyumluluk sağlanmış ve daha fazla cihaz için optimize edilmesi planlanmaktadır.
-Katkı Sağlamak
-Bu projeye katkı sağlamak isterseniz, lütfen aşağıdaki adımları izleyin:
+# Özellikler
+•⁠  Navbar: Menüdeki bağlantılar (Home, Blog, Single Post) düzgün çalışmakta ve React Router DOM kullanılarak sayfalara yönlendirme yapılmaktadır.
 
-Projeyi fork edin.
-Yeni bir branch oluşturun (git checkout -b feature-name).
-Değişikliklerinizi yapın ve commit edin (git commit -am 'Added new feature').
-Branch'ınızı GitHub'a push edin (git push origin feature-name).
-Pull request oluşturun.
-Lisans
-Bu proje MIT lisansı ile lisanslanmıştır. Daha fazla bilgi için LICENSE dosyasına göz atabilirsiniz.
+•⁠  Dark/Light Mode: Navbar'daki buton aracılığıyla tema değiştirebilirsiniz. Kullanıcının tercihi localStorage'da saklanır, bu sayede sayfa yenilendiğinde seçilen tema korunur.
 
-Bu README, projenizin temel özelliklerini ve kullanım talimatlarını açık bir şekilde belirtmektedir. Proje detaylarını ve gelişen özellikleri bu dosyaya ekleyerek katkı sağlayan diğer geliştiricilerin veya kullanıcıların daha rahat bir şekilde projeyi kullanmasını ve geliştirmesini sağlayabilirsiniz.
+•⁠  Responsive Tasarım: Mobil uyumluluk üzerinde çalışmalar sürmektedir. Şu anda temel mobil uyumluluk sağlanmış ve daha fazla cihaz için optimize edilmesi planlanmaktadır.
 
 ### Açıklamalar:
   - ⁠Kullanılan Teknolojiler: README dosyasına, projede kullanılan teknolojiler (Next.js, TypeScript, Tailwind CSS, React Router DOM, LocalStorage) ve her birinin nasıl kullanıldığını ekledim.
