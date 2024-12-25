@@ -16,7 +16,7 @@ const BlogBanner = ({
   date,
 }: BlogBannerProps) => {
   return (
-    <div className="relative max-w-6xl mx-auto my-5">
+    <div className="relative max-w-6xl mx-auto my-5 ">
       <div className="relative w-full h-[20rem] lg:h-[34rem] overflow-hidden rounded-lg shadow-md">
         <Image
           src={imageSrc}

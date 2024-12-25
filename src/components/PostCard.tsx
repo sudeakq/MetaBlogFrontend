@@ -18,7 +18,7 @@ const PostCard: React.FC<PostCardProps> = ({
   authorImage,
 }) => {
   return (
-    <div className="max-w-xs rounded-lg border border-gray-200 bg-white shadow-md overflow-hidden p-4">
+    <div className="max-w-xs rounded-lg border border-gray-200 bg-white shadow-md overflow-hidden p-4  dark:bg-gray-900 dark:text-gray-100 dark:border-gray-700">
     
       <img className="w-full h-56 object-cover rounded-lg" src={imageUrl} alt={title} />
 
@@ -28,9 +28,9 @@ const PostCard: React.FC<PostCardProps> = ({
           {category}
         </span>
 
-        <h2 className="text-lg font-bold text-gray-800 mb-4">{title}</h2>
+        <h2 className="text-lg font-bold text-gray-800 dark:text-gray-100 mb-4">{title}</h2>
 
-        <div className="flex items-center text-gray-600 text-sm">
+        <div className="flex items-center text-gray-600 dark:text-gray-100 text-sm">
           <img
             className="w-8 h-8 rounded-full mr-3"
             src={authorImage}

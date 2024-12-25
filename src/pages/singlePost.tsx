@@ -5,10 +5,10 @@ import Advertisement from './../components/Advertisement';
 
 const SinglePost = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen dark:bg-gray-900 dark:text-gray-300">
       <Navbar />
       <div className="container mx-auto px-4 py-8 mt-10 flex items-center flex-col">
-        <div className="flex flex-col items-left mb-4 w-1/2 ">
+        <div className="flex flex-col items-left mb-4 w-1/2 mt-4">
           <span className="bg-blue-500 text-white px-3 py-1 rounded-md mb-2 max-w-28">
             Technology
           </span>
