@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,9 +25,9 @@ const Navbar = () => {
             menuOpen ? "translate-x-0" : "-translate-x-full"
           } lg:items-center lg:flex-row flex flex-col top-16 left-0 z-40`}
         >
-          <li className="hover:text-black cursor-pointer p-4 lg:p-0">Home</li>
-          <li className="hover:text-black cursor-pointer p-4 lg:p-0">Blog</li>
-          <li className="hover:text-black cursor-pointer p-4 lg:p-0">Single Post</li>
+          <li className="hover:text-black cursor-pointer p-4 lg:p-0">  <Link href="/">Home</Link></li>
+          <li className="hover:text-black cursor-pointer p-4 lg:p-0"> <Link href="/blogListing">Blog</Link></li>
+          <li className="hover:text-black cursor-pointer p-4 lg:p-0"> <Link href="/singlePost">Single Post</Link></li>
           <li className="hover:text-black cursor-pointer p-4 lg:p-0">Pages</li>
           <li className="hover:text-black cursor-pointer p-4 lg:p-0">Contact</li>
         </ul>

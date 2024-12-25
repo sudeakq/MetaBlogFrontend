@@ -1,3 +1,4 @@
+// HomePage
 import BlogCard from "@/components/BlogCard";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
@@ -5,7 +6,7 @@ import PostCard from "@/components/PostCard";
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+  <div className="min-h-screen">
       <Navbar />
       <div className="pt-20 lg:pt-25">
         <BlogCard
