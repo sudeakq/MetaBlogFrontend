@@ -18,7 +18,7 @@ const PostCard: React.FC<PostCardProps> = ({
   authorImage,
 }) => {
   return (
-    <div className="max-w-xs rounded-lg border border-gray-200 bg-white shadow-md overflow-hidden p-4  dark:bg-gray-900 dark:text-gray-100 dark:border-gray-700">
+    <div className="max-w-xs rounded-lg border border-gray-200 bg-white shadow-md overflow-hidden p-4  dark:bg-gray-900 dark:text-gray-100 dark:border-gray-700 lg:mr-10">
     
       <img className="w-full h-56 object-cover rounded-lg" src={imageUrl} alt={title} />
 

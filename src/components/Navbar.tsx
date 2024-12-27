@@ -16,13 +16,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white dark:bg-gray-900 z-50">
-      <div className="flex justify-between items-center py-4 px-[11rem] container mx-auto">
+    <nav className="fixed top-0 left-0 w-full bg-white dark:bg-gray-900 z-50 gap-10 ">
+      <div className="flex justify-between items-center py-4 lg:px-[11rem] md:px-[5rem] px-4
+      container mx-auto ">
         <div className="flex items-center space-x-2">
           {darkMode ? (
-            <img src="/LogoLight.png" alt="Logo" className="h-10 w-auto" />
+            <img src="/LogoLight.png" alt="Logo" className="lg:h-10 h-5 max-w-7xl" />
           ) : (
-            <img src="/Logo.png" alt="Logo" className="h-10 w-auto" />
+            <img src="/Logo.png" alt="Logo" className="lg:h-10 h-5 max-w-7xl" />
           )}
         </div>
 

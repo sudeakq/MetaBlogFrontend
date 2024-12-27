@@ -8,11 +8,11 @@ const SinglePost = () => {
     <div className="min-h-screen dark:bg-gray-900 dark:text-gray-300">
       <Navbar />
       <div className="container mx-auto px-4 py-8 mt-10 flex items-center flex-col">
-        <div className="flex flex-col items-left mb-4 w-1/2 mt-4">
+        <div className="flex flex-col items-left mb-4 lg:w-1/2 w-full mt-4">
           <span className="bg-blue-500 text-white px-3 py-1 rounded-md mb-2 max-w-28">
             Technology
           </span>
-          <h1 className="text-3xl font-bold text-left mb-1 flex-col flex">
+          <h1 className="lg:text-3xl md:text-2xl sm:text-xl text-xl font-bold text-left mb-1 flex-col flex ">
             The Impact of Technology on the Workplace: <span> How Technology is Changing</span>
           </h1>
           <div className="text-left text-gray-500">
@@ -37,7 +37,7 @@ const SinglePost = () => {
 
         <div className="px-4 py-8 font-serif text-md">
           <div className="flex justify-center">
-            <div className="w-1/2">
+            <div className="lg:w-1/2 w-full">
               <img
                 src="/SinglePostFirstPic.png"
                 alt="Travel Destination"
