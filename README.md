@@ -1,6 +1,6 @@
-# Blog Template - Modern Creative Design
+# Blog Template Frontend
 
-Bu proje, modern ve yaratıcı bir blog tasarımını temel alarak yapılmıştır. Tasarım, Figma üzerindeki ücretsiz blog template'inden ilham alınarak geliştirilmiştir. Proje, sadece frontend kodlarından oluşmaktadır ve *Next.js, **TypeScript, **Tailwind CSS* gibi teknolojiler kullanılarak geliştirilmiştir.
+Bu proje, blog tasarımını temel alarak yapılmıştır. Tasarım, Figma üzerindeki ücretsiz blog template'inden ilham alınarak geliştirilmiştir. Proje, sadece frontend kodlarından oluşmaktadır ve *Next.js, **TypeScript, **Tailwind CSS* gibi teknolojiler kullanılarak geliştirilmiştir.
 
 ### Özellikler:
 •⁠  ⁠Sayfalar: 
